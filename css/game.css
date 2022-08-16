@@ -1,0 +1,173 @@
+body {
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+table {
+    height: auto;
+    margin: 0 auto;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+table td {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110px;
+    border: 2.5px solid #FFF;
+    height: 150px;
+    width: 150px;
+}
+
+#c1,
+#c2,
+#c3 {
+    border-top: none;
+}
+
+#c3,
+#c6, 
+#c9 {
+    border-right: none;
+}
+
+#c7,
+#c8,
+#c9 {
+    border-bottom: none;
+}
+
+#c1,
+#c4,
+#c7 {
+    border-left: none;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.display {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    margin-top: 1%;
+    gap: 30px;
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    background-color: #ECF6FD;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -2px 3px 0 #333, -4px 6px #000;
+}
+
+.button:hover {
+    background-color: #FECE22;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+.score-board {
+    position: absolute;
+    width: 100%;
+    transform: translate(130%, -115%);
+}
+
+.score {
+    font-size: 45px;
+    color: #111;
+}
+
+.avatar {
+    width: 90px;
+}
+
+.n {
+    font-size: 4rem;
+    color: #111;
+}
+
+#texto {
+    position: ablosute;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    background-color: #ECF6FD;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: -1px 2px 0 #333, -2px 3px #000;
+    animation: piscaPisca 2s infinite;
+}
+
+@keyframes piscaPisca {
+    0% {color:#000}
+    25% {color:#ECF6FD}
+    50% {color:#000}
+    75% {color:#ECF6FD}
+    100% {color:#000}
+}
+
+.bot {
+    position: absolute;
+    top: 15%;
+    transform: translate(-105%);
+}
+
+.rad {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    color: #ECF6FD;
+    border-radius: 5px;
+}
+
+.text {
+    color: #111;
+}
+
+.teste {
+    font-size: clamp(8px, 22px, 30px)
+}
+
+.l-header {
+    margin-left: 1%;
+}
+
+.l-header__logo {
+    position: absolute;
+    width: 150px;
+    
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 5%;
+    height: 2em;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jogo da Velha </title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/game.css">
+
+    <script defer type="text/javascript" src="./js/main.js"></script>
+</head>
+
+<body>
+    <header class="l-header">
+        <img class="l-header__logo" src="./images/logo.svg" alt="Super Mario Logo" />
+    </header>
+
+    <main>
+        <section class="container">
+            <section class="bot">
+                <form action="#" method="#" name="opcao">
+                    <label class="text"> Jogar contra o Computador?</label> <br /><br />
+                    <label class="rad"><input type="radio" id="cpus" name="cpu" value="SIM" checked="checked" /> <span
+                            class="teste"> SIM </span></label>
+                    <label class="rad"><input type="radio" id="cpun" name="cpu" value="NÃO" /> <span class="teste"> NÃO
+                        </span> </label>
+                </form>
+            </section>
+            <section>
+                <p id="texto"> Aguardando resultado... </p>
+                <audio src="audio/coin.mp3"></audio>
+                <audio id="cogumelo" src="audio/cogumelo.mp3"></audio>
+            </section>
+
+            <section class="display">
+                <table cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td id="c1" onclick="checkjogo(this.id)"></td>
+                            <td id="c2" onclick="checkjogo(this.id)"></td>
+                            <td id="c3" onclick="checkjogo(this.id)"></td>
+                        </tr>
+                        <tr>
+                            <td id="c4" onclick="checkjogo(this.id)"></td>
+                            <td id="c5" onclick="checkjogo(this.id)"></td>
+                            <td id="c6" onclick="checkjogo(this.id)"></td>
+                        </tr>
+                        <tr>
+                            <td id="c7" onclick="checkjogo(this.id)"></td>
+                            <td id="c8" onclick="checkjogo(this.id)"></td>
+                            <td id="c9" onclick="checkjogo(this.id)"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="buttons">
+                <button class="button" onclick="newGame()"> NEW GAME </button>
+                <button class="button" onclick="restart()"> PLAY AGAIN </button>
+            </section>
+
+            <section class="score-board">
+                <p class="score"> SCORE </p>
+
+                <br /><br />
+
+                <img class="avatar" src="images/X.png" alt="Mario" />
+                <label>
+                    <span class="n" id="point_x">0</span>
+                </label>
+
+                <br /><br />
+
+                <img class="avatar" src="images/O.png" alt="Batata" />
+                <label>
+                    <span class="n" id="point_o">0</span>
+                </label>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
